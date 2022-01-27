@@ -3,8 +3,8 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="##Intro">Intro</a></li>
-    <li><a href="##Why-pointers">Why pointers</a></li>
+    <li><a href="#intro">Intro</a></li>
+    <li><a href="#why-pointers">Why pointers</a></li>
     <li><a href="#Passing-by-reference">Passing by reference</a></li>
   </ol>
 </details>

@@ -100,7 +100,7 @@ so using this functions the if you compare hello vs Hello c++ made this
 
 |104|101|108|108|111|-
 |72|101|108|108|111| 
-----------------------
+
 32  0   0   0   0
 
 so it returns 32 that means that hello is higher than Hello and the reason is because lower case has a higher ascii code 

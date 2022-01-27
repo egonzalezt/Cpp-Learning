@@ -1,23 +1,24 @@
-Object-Oriented Programming 
+# Object-Oriented Programming 
 
-Principals 
+## Principals 
 
 1. Abstraction
 2. Encapsulation
-    2.1 Data hiding
+    * Data hiding
 3. Inheritance
 4. Polymorphism
 
-Basic structure
+## Basic structure
 
+```C++
 Class oop{
     Private:
     1. Data
     Public:
     2. Functions()
 }
-
-class of classification
+```
+class means classification
 
 for example in a class
 
@@ -36,11 +37,9 @@ object AUDI
 
 each instance is an object of the class
 
-----------------------
+## Writing a Class
 
-Writing a Class
-
-
+```C++
 class rectangle{
     int length;
     int breadth;
@@ -62,8 +61,7 @@ int main(){
     cout<<r1.area()<<endl;//prints 50
     return 0;
 }
-
------------------------------------------
+```
 
 Using Stack -> Rectangle r;
 
@@ -73,23 +71,19 @@ in java all objets store in heap
 
 only c++ gives you this two options
 
-
------------------------------------------
-
-Contructors
+## Contructors
 
 1. Default Constructor = buildin constructor, compiler provided constructor
 2. Non-Parameterized Constructor.
 3. Parameterized Constructor.
 4. Copy Constructor.
 
-Copy Constructor (Danger)
-
+### Advices about Copy Constructor (Danger)
 
 If you wanna create a copy constructor take care because it is very dangerous 
 
 for example
-
+```C++
 class Test{
     int a;
     int *p;
@@ -104,11 +98,11 @@ class Test{
         p=t*p;
     }
 }
+```
 
-there is a huge problem here, if you initialize a copy constructor the problem
-is that in this case your new object now points array p from your original object that it does not have sense 
-new object must create a new array not use the others array so for that reason you need to take care of that
+there is a huge problem here, if you initialize a copy constructor the problem is that in case that your new object now points array p from your original object that it does not have sense new object must create a new array not use the others array so for that reason you need to take care of that.
 
+```C++
 class Test{
     int a;
     int *p;
@@ -123,12 +117,13 @@ class Test{
         p=new int[a];//now it's sparated
     }
 }
+```
 
--------------------------
-Scope Resolution Operator
+# Scope Resolution Operator
 
 lets see an example
 
+```C++
 class Rectangle
 {
     private://by default everything is private
@@ -206,38 +201,38 @@ int main(){
 
     return 0;
 }
+```
 
 Scope Resolution Operator is when you define the logic of your function outside of your class but when you made it inside is not that
 
 what is the problem 
 
-1. if you dont use Scope Resolution Operator when you call a method on your class that code will be copy on the place where is called
-but when you use Scope Resolution Operator it create the necesary machine code to call it outside the place where is needed that is much better
+1. if you dont use Scope Resolution Operator when you call a method on your class that code will be copy on the place where is called, but when you use Scope Resolution Operator it create the necesary machine code to call it outside the place where is needed that is much better
 
 if the function is inside the class are called as inline function dont use it if you have a complex logic 
 
-
--------------------------
-
-This pointer
+## This pointer
 
 we have this constructor
 
+```C++
 Rectangle(int length,int breadth)
 {
 	length=length;
 	breadth=breadth;
 }
-
+```
 which one belongs to the Paramethers and which one belongs to Rectangle 
 
 to solve that and make it more clear we need to use this->
 
+```C++
 Rectangle(int length,int breadth)
 {
 	this->length=length;
 	this->breadth=breadth;
 }
+```
 
 this->length 
 this->breadth
@@ -251,14 +246,13 @@ those are the paramethers from the constructor
 
 Note see thisPointer.cpp
 
---------------------------------
-
-Structure vs Class
+## Structure vs Class
 
 they are very similar 
 
 in c you only have data members not Functions
 
+```C++
 struct Demo
 {
     //data is public by default 
@@ -271,3 +265,4 @@ struct Demo
         cout<<x<<" "<<y<<endl;
     )
 }
+```

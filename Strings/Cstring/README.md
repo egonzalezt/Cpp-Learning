@@ -1,3 +1,5 @@
+# C strings
+
 How to represent strings
 
 1. Array of characters (can use it on C and C++)
@@ -10,7 +12,7 @@ char x = 'Hello'; does not work
 
 char S[10]="Hello"; -> |H|e|l|l|o|\0|||||
 
-the \0 represents the null character or the string delimitation
+**The \0 represents the null character or the string delimitation**
 
 The problem with this method is the size of the character because the array is size 10 but it only use 5 spaces. so we are wasting memory
 
@@ -22,22 +24,21 @@ char S[]={'H','e','l','l','o','\0'}; -> |H|e|l|l|o|\0|
 
 char S[]={65,66,67,68,'\0'}; (the numbers are the ascii code for the word)
 
-Using pointers
+## Using pointers
 
 char *S ="Hello"; -> |H|e|l|l|o|\0| 
 
 pointer have the string inside the heap
 
-To store in:
+### To store in:
 
 1. Heap: char *S ="Hello";
 2. Stack: char S[] = "Hello";
 
---------------------------------------
 
-CSTRING
+## CSTRING
 
-is a library with build in function that gives to the user to work with strings or character array
+is a **library** with build in function that gives to the user to work with strings or character array
 
 - strlen(str) -> gives the lenght of the string (number of chars that string contains)
 
@@ -107,7 +108,6 @@ so it returns 32 that means that hello is higher than Hello and the reason is be
 there is a 32 of difference if you want to go from A to a
 
 now in modern c++ only return -1 if str 1 are lower than str 2 or 0 if they are the same or 1 if str1 are higher than str2
-
 
 - strtol(str1) => string to long convert string to long integer number
 

@@ -1,5 +1,8 @@
+# Constructor structure
+
 The good practices to made a good oop is to create classes with this format
 
+```C++
 class Rectangle{
     private:
         int length;
@@ -28,3 +31,4 @@ class Rectangle{
         //Destructor
         ~Rectangle();
 };
+```

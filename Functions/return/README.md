@@ -1,10 +1,11 @@
+# Reference
+
 A C++ program can be made easier to read and maintain by using references rather than pointers. 
 A C++ function can return a reference in a similar way as it returns a pointer.
 
-When a function returns a reference, it returns an implicit pointer to its return value. 
-This way, a function can be used on the left side of an assignment statement. 
-For example, consider this simple program −
+When a function returns a reference, it returns an implicit pointer to its return value. This way, a function can be used on the left side of an assignment statement. For example, consider this simple program.
 
+```C++
 #include <iostream>
 #include <ctime>
  
@@ -35,6 +36,7 @@ int main () {
    }
    return 0;
 }
+```
 When the above code is compiled together and executed, it produces the following result −
 
 Value before change
@@ -50,8 +52,9 @@ vals[2] = 33.1
 vals[3] = 70.8
 vals[4] = 50
 
-When returning a reference, be careful that the object being referred to does not go out of scope. 
-So it is not legal to return a reference to local var. But you can always return a reference on a static variable.
+## Advices
+
+When returning a reference, be careful that the object being referred to does not go out of scope. So it is not legal to return a reference to local var. But you can always return a reference on a static variable.
 
 int& func() {
    int q;

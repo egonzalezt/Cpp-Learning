@@ -1,4 +1,4 @@
-Input and output operator
+# Input and output operator
 
 Cout and cin to display and read data can be overloaded
 
@@ -18,10 +18,12 @@ C++ know how to display complex number?
 
 No!! he doesn't know how to do it, for that reason we made 
 
+```C++
 void display()
 {
 	cout<<real<<"+i"<<img;
 }
+```
 
 but using overloadig we can remove that and only do cout<<c1<<endl;
 
@@ -39,12 +41,13 @@ friend ostream & operator<<(ostream &out,Complex &c);
 
 2. outside class create the overload output function
 
+```C++
 ostream & operator<<(ostream &out,Complex &c)
 {
     out<<c.real<<"+i"<<c.img<<endl;
     return out;
 }
-
+```
 passing value as reference to the function because those parameter doesn't belong to that function 
 
 if you want to use all the functions included on cout like that 

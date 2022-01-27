@@ -1,17 +1,16 @@
-Class string
+## Class string
 
 to use this class you need to import the library
-
+```C++
 #include <string>
-
+```
 string str; -> object initialization
 
 cin>>str; -> to read string by user keyboard input the problem is that only read one word so for that reason you need to use 
 
 getline(cin,str); cin means the maximun of chars that you need to store
 
-remember that string works like arraylist it create a regular array with size x but if you need more space if will create a copy
-of that array but with 2x size.
+remember that string works like arraylist it create a regular array with size x but if you need more space if will create a copy of that array but with 2x size.
 
 see what happens if you use cin 
 
@@ -23,23 +22,22 @@ ssssssssssssssssssssssdfsdfasfsdfasfasdfasdfasfdfd
 You write: ssssssssssssssssssssssdfsdfasfsdfasfasdfasdfasfdfd
 
 with spaces
-
+```Powershell
 PS F:\Desktop\C++\Strings\String class> .\demo1.exe
 Enter string
 asdf asasdf  
 You write: asdf (see it only store the first word)
-
-using getline(cin,str);
+```
+**using getline(cin,str);**
+```Powershell
 PS F:\Desktop\C++\Strings\String class> .\demo1.exe
 Enter string
 sasfasdfasdf asdfasd fasdfasd
-You write: sasfasdfasdf asdfasd fasdfasd (it works store all the words)
+You write: sasfasdfasdf asdfasd fasdfasd 
+```
+**it works store all the words**
 
-
-----------------------------------------------------
-
-
-String build in functions
+## String build in functions
 
 1. s.length() -> the length of the string only
 for example 
@@ -60,9 +58,7 @@ string s2 = "world";
 s1.size(); -> returns 5
 s2.size(); -> returns 5
 
--------------------
-remember handle errors because if size or length are NULL or nullptr C++ returns an error
--------------------
+**remember handle errors because if size or length are NULL or nullptr C++ returns an error**
 
 3. s.capacity()
 
@@ -163,10 +159,8 @@ s.pop_back()
 
 s is converted to programmin
 
-----------------------------------
-these operations only works as single character it cannot add or delete more than 1 char
-also is the same as stack operations
-----------------------------------
+
+**these operations only works as single character it cannot add or delete more than 1 char also is the same as stack operations**
 
 14. s1.swap(s2)
 
@@ -273,11 +267,11 @@ str1 = str+" world";
 
 str1+=" world"; -> "Hello world"
 
--------------------------------------------------------------------
+### Class string iterator
 
-Class string iterator
-
+```C++
 string::iterator 
+```
 
 28. begin()
 
@@ -292,4 +286,3 @@ end index of the string
 31. rbegin()
 
 32. rend()
-

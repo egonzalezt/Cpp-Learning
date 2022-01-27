@@ -5,7 +5,10 @@
   <ol>
     <li><a href="#intro">Intro</a></li>
     <li><a href="#why-pointers">Why pointers</a></li>
-    <li><a href="#Passing-by-reference">Passing by reference</a></li>
+    <li><a href="#pointer-arithmetic">Pointer Arithmetic</a></li>
+    <li><a href="#problems-with-pointers">Problems with pointers</a></li>
+    <li><a href="#reference">Reference</a></li>
+
   </ol>
 </details>
 
@@ -111,7 +114,7 @@ if the result of the operation is negative like P-Q = -3 means that P is the nea
 
 Multiplication, division or whatever it does not makes sense, but for example P++ it makes sense because we need to go to the next operator
 
-## problems with pointers
+## Problems with pointers
 
 There are 3 problems that may occur during runtime or testing that you should avoid if you are using pointers.
 

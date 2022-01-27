@@ -1,5 +1,16 @@
 # Pointers
 
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="##Intro">Intro</a></li>
+    <li><a href="##Why-pointers">Why pointers</a></li>
+    <li><a href="#Passing-by-reference">Passing by reference</a></li>
+  </ol>
+</details>
+
+## Intro
+
 Pointer is a variable which **is used to store address of data**.
 
 1. Data variable -> int x=10;   ->  2 bytes of memory located in stack position 0x3e935ff9b4 (example memory address)

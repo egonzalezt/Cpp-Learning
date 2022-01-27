@@ -32,4 +32,4 @@ You will need a C++ compiler like gcc
   ```
 
 * Windows
-  [Follow instructions provided by Visual Studio Team](https://code.visualstudio.com/docs/cpp/config-mingw)
+  [Follow instructions provided by Visual Studio Code Team](https://code.visualstudio.com/docs/cpp/config-mingw)

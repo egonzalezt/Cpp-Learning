@@ -52,9 +52,9 @@ dereferencing cout<<*p;
 
 - Another reason to use pointers is because programming languajes works with Stacks which means that information can be accessed one time after that information will be cleared, because it works as stack Arithmetic so if you need that information for example the information on a single array if you don't wanna lost it, you need to use pointers because pointers store information on the heap and the positive thing with **heap is that your information keeps as long as your code is running** and stack this thing doesn't works like that.
 
-**Stack -> int A[5]={1,2,3,4,5};**
+- Stack -> int A[5]={1,2,3,4,5};
 
-**Heap -> int *p;**
+- Heap -> int *p;
 
 p= new int[5];
 

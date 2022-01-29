@@ -251,3 +251,6 @@ for that reason on Object Oriented exists getters and setters.
 ## Types of Inheritance
 
 Let's explore the different types of inheritance
+
+![Inheritance types](https://user-images.githubusercontent.com/53051438/151681318-5b56e075-a9ed-4277-99a0-aa65407ba519.png)
+

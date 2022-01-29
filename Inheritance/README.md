@@ -181,7 +181,7 @@ class Car: public Vehicle
     virtual void doStuff();
 };
 
-## Acess Specifiers 
+## Access Specifiers 
 
 Access modifiers are used to implement an important aspect of Object-Oriented Programming known as Data Hiding.
 

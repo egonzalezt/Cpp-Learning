@@ -7,7 +7,7 @@ class Rectangle{
     private:
         int length;
         int breadth;
-    pubblic:
+    public:
         //Constructor
         Rectangle();
         Rectangle(int l,int b);

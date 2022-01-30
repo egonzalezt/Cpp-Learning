@@ -37,6 +37,6 @@ class Rectangle{
 
 ### Definition
 
-***"Singleton is a creational design pattern, which ensures that only one object of its kind exists and provides a single point of access to it for any other code."*** taken from refactoring.guru
+***"Singleton is a creational design pattern, which ensures that only one object of its kind exists and provides a single point of access to it for any other code."*** [Taken from refactoring.guru](https://refactoring.guru/design-patterns/singleton/cpp/example)
 
 [Visit tutorialspoint for more information](https://sourcemaking.com/uml/modeling-it-systems/structural-view/generalization-specialization-and-inheritance)

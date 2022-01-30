@@ -302,5 +302,5 @@ Thanks to Virtual Base classes class D that is inherit from B and C but they are
 
 3. Private mode: If we derive a sub class from a Private base class. Then both public member and protected members of the base class will become Private in derived class. 
 
-
+![Ways of inheritance](https://user-images.githubusercontent.com/53051438/151682305-71bf022e-7cc2-4afd-b3a5-522d46e29c6c.png)
 

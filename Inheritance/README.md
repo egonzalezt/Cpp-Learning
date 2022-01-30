@@ -167,6 +167,7 @@ Doing that C++ calls do this work, first x=10 and y=12, so C++ sends the value o
 1. A car is-a vehicle
 2. A car has-a steering wheel
 
+```C++
 class SteeringWheel
 {};
 
@@ -180,7 +181,7 @@ class Car: public Vehicle
     SteeringWheel  sWheel;
     virtual void doStuff();
 };
-
+```
 ## Access Specifiers 
 
 Access modifiers are used to implement an important aspect of Object-Oriented Programming known as Data Hiding.
@@ -267,7 +268,7 @@ D can use functions from B and C but also can use from A
 
 ![Multipart Inheritance](https://user-images.githubusercontent.com/53051438/151681810-2ada44a6-d900-4ba4-bfec-c503c078d553.png)
 
-But here we get an ambiguity that function fun() should be called on B,C or what ever to remove it we have Virtual based classes
+But here we get an ambiguity that function fun() should be called on B,C or what ever, to remove it we have Virtual based classes
 
 ### Virtual base class
 
@@ -304,3 +305,12 @@ Thanks to Virtual Base classes class D that is inherit from B and C but they are
 
 ![Ways of inheritance](https://user-images.githubusercontent.com/53051438/151682305-71bf022e-7cc2-4afd-b3a5-522d46e29c6c.png)
 
+## Generalization vs Specialization
+
+This topic is related with inheritance.
+
+**Generalization** is the process of extracting shared characteristics from two or more classes, and combining them into a **generalized superclass**. 
+
+**Specialization** means creating new subclasses from an existing class. but with extra features or specific information or functions for the class
+
+[Visit sourcemaking for more information](https://sourcemaking.com/uml/modeling-it-systems/structural-view/generalization-specialization-and-inheritance)

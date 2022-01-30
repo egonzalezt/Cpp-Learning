@@ -254,3 +254,41 @@ Let's explore the different types of inheritance
 
 ![Inheritance types](https://user-images.githubusercontent.com/53051438/151681318-5b56e075-a9ed-4277-99a0-aa65407ba519.png)
 
+1. Single the derived class(b) took the structure from the base class(a)
+2. Hierarchical is the same as the single but in this case multiple classes use the base class(a) but the base class(A) is a generalized class.
+3. MultiLevel one class is derived from original class but that class is derived from another class. a point can be derived to a circle and a circle can be derived to a Cylinder.
+4. Multiple is a Derived class that can take the atributes from multiples classes like Smartphone can inherit Camera, Radio, Calculator,etc.
+
+Also C++ can mix multiple types of inheritance
+
+## Multipart Inheritance
+
+D can use functions from B and C but also can use from A
+
+
+But here we get an ambiguity that function fun() should be called on B,C or what ever to remove it we have Virtual based classes
+
+### Virtual base class
+
+Virtual base classes are used in virtual inheritance in a way of preventing multiple “instances” of a given class appearing in an inheritance hierarchy when using multiple inheritances.
+
+```C++
+
+class A{
+
+};
+
+class B: virtual public A{
+
+};
+
+class C: public virtual A{
+
+};
+
+class D: public B, public C{
+
+};
+```
+
+Thanks to Virtual Base classes class D that is inherit from B and C but they are virtual the problem with fun() function appering on B and C is removed and the ambiguity is fixed

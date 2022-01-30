@@ -292,4 +292,15 @@ class D: public B, public C{
 };
 ```
 
-Thanks to Virtual Base classes class D that is inherit from B and C but they are virtual the problem with fun() function appering on B and C is removed and the ambiguity is fixed
+Thanks to Virtual Base classes class D that is inherit from B and C but they are virtual the problem with fun() function appering on B and C is removed and the ambiguity is fixed.
+
+## Modes of Inheritance
+
+1. Public mode: If we derive a sub class from a public base class. Then the public member of the base class will become public in the derived class and protected members of the base class will become protected in derived class.
+
+2. Protected mode: If we derive a sub class from a Protected base class. Then both public member and protected members of the base class will become protected in derived class.
+
+3. Private mode: If we derive a sub class from a Private base class. Then both public member and protected members of the base class will become Private in derived class. 
+
+
+

@@ -265,6 +265,7 @@ Also C++ can mix multiple types of inheritance
 
 D can use functions from B and C but also can use from A
 
+![Multipart Inheritance](https://user-images.githubusercontent.com/53051438/151681810-2ada44a6-d900-4ba4-bfec-c503c078d553.png)
 
 But here we get an ambiguity that function fun() should be called on B,C or what ever to remove it we have Virtual based classes
 

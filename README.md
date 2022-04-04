@@ -20,7 +20,6 @@ You will need a C++ compiler like gcc
 
 [Visit GCC website](https://gcc.gnu.org/)
 
-
 * Linux
   ```bash
     sudo apt-get update
